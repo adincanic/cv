@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0C356A;
+    --text-color: #525252;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: Inter, sans-serif;
+    background: white;
+    color: #68a6f7;
+}
+/* common styles */
+img{
+    width: 100%;
+    border: 5px solid #FFC436;
+    border-radius: 1000px;
+}
+a{
+    text-decoration: none;
+    color: #68a6f7;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+    text-align: justify;
+}
+.about{
+    text-align: justify;
+}
+.title{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.item_preTitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 300;
+}
+.item_title{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 0.8rem 0 ;
+}
+.item_titlee{
+    font-size: 1.6rem;
+    color: #525252;
+    font-weight: 500;
+    margin: 0.8rem 0 ;
+}
+.item_subtitle{
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* layouts */
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #f2f2f2;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+.group-1, .group-2{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.group-3{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction:  row;
+    gap: 5rem;
+}
+.group-3>div{
+    flex: 1;
+}
+@media only screen and (max-width: 768px){
+    .profile{
+        margin-bottom: 0;
+    }
+    .group-3{
+        flex-direction: column;
+    }
+}
+
+/* profile */
+.profile_container{
+    display: flex;
+    gap: 2rem;
+}
+.profile_profileImg{
+    max-width: 250px;
+}
+.profile_name_firstName{
+    color:#68a6f7;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw ,4rem);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+.profile_name_lastName{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+.profile_title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+.downloadBtn{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    background-color: #68a6f7;
+    color: #f2f2f2;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 200px;
+
+}
+
+.downloadBtn:hover{
+    animation: pulse 1s infinite;
+    transition: .3s;
+    background-color: #358bfb;
+}
+@media only screen and (max-width: 768px){
+    .profile_container{
+        flex-direction: column;
+    }
+}
+
+/* Skills */
+.skill_list{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
+
+/* Qualities */
+.qua_item{
+    margin-top: 2rem;
+}
+.qua_name{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/* Education */
+.edu_item{
+    margin-top: 2rem;
+}
+
+/* Skill bar */
+.skillBar{
+    width: 25rem;
+    background-color: #68a6f7;
+    /*border: solid 1px #0C356A;*/
+    border-radius: 30px;
+}
+.bos{
+    width: 100%;
+    background-color: #FFC436;
+    color: #FFC436;
+    border-radius: 30px;
+}
+.eng{
+    width: 70%;
+    background-color: #FFC436;
+    color: #FFC436;
+    border-radius: 30px;
+}
+.ger{
+    width: 40%;
+    background-color: #FFC436;
+    color: #FFC436;
+    border-radius: 30px;
+}
+.lan_item{
+    margin-top: 2rem;
+}
+.item_titlee{
+    margin-top: 2rem;
+}
+
+/* Experience */
+.exp_item{
+    margin-top: 2rem;
+}
+
+/*Internships*/
+/*.inter{
+    margin-top: 2rem;
+}*/
+.inter_item{
+    margin-top: 2rem;
+}
+
+/*conf and sem*/
+.conf_item{
+    margin-top: 2rem;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.link{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: .5rem;
+    color: var(--text-color);
+    margin-top: 1rem;
+}
+
+/* Socials */
+.social_items{
+    margin-top: 2rem;
+}
+.social_item{
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    gap:.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+.social_item:hover{
+    color: var(--primary-color);
+}
+.social_item svg{
+    width: 2rem;
+}
+hr{
+    grid-column: 1/-1;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-top: 2px solid rgba(128, 128, 128, 0.467);
+}
+@media only screen and (max-width:768px){
+    hr{
+        margin: 0 auto;
+    }
+}

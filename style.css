@@ -159,11 +159,33 @@ a{
 
 }
 
+.downloadBtn1{
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    background-color: #68a6f7;
+    color: #f2f2f2;
+    padding: 10px 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 200px;
+
+}
+
 .downloadBtn:hover{
     animation: pulse 1s infinite;
     transition: .3s;
     background-color: #358bfb;
 }
+
+.downloadBtn1:hover{
+    animation: pulse 1s infinite;
+    transition: .3s;
+    background-color: #a3a3a3;
+}
+
 @media only screen and (max-width: 768px){
     .profile_container{
         flex-direction: column;

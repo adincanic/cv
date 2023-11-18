@@ -20,7 +20,7 @@ body{
 /* common styles */
 img{
     width: 100%;
-    border: 5px solid #FFC436;
+    border: 5px solid #68a6f7;
     border-radius: 1000px;
 }
 a{
@@ -201,20 +201,20 @@ a{
 }
 .bos{
     width: 100%;
-    background-color: #FFC436;
-    color: #FFC436;
+    background-color: #68a6f7;
+    color: #68a6f7;
     border-radius: 30px;
 }
 .eng{
     width: 70%;
-    background-color: #FFC436;
-    color: #FFC436;
+    background-color: #68a6f7;
+    color: #68a6f7;
     border-radius: 30px;
 }
 .ger{
     width: 40%;
-    background-color: #FFC436;
-    color: #FFC436;
+    background-color: #68a6f7;
+    color: #68a6f7;
     border-radius: 30px;
 }
 .lan_item{
